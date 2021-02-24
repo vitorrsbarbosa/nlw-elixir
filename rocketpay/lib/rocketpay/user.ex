@@ -14,6 +14,8 @@ defmodule Rocketpay.User do
     field :password_hash, :string
     field :password, :string, virtual: true
     field :nickname, :string
+
+    timestamps()
   end
 
   def changeset(params) do
